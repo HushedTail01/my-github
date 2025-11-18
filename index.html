@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム降落ポイント</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🪂 ランダム降落ポイント決定</h1>
+        <p>ボタンを押すと、あなたが地球のどこに降り立つかが決まります。</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <p id="text">まだ降落していません。ボタンを押してランダム降落地点を決めよう！</p>
+            <button id="restartBtn">ランダム降落！</button>
+        </section>
+
+        <section class="map-wrapper">
+            <iframe
+                id="mapFrame"
+                title="ランダム降落マップ"
+                src=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a id="openLink" href="#" target="_blank" class="map-link" style="display:none;">
+                OpenStreetMapでこの場所を開く
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Random Landing Map</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
